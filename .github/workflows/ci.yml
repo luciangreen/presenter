@@ -1,0 +1,29 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: presenter
+      - name: Check out the Lucian Office core and Counter beside Presenter, as in lucianos/apps
+        uses: actions/checkout@v4
+        with:
+          repository: luciangreen/lucianoffice
+          path: lucianoffice
+      - uses: actions/checkout@v4
+        with:
+          repository: luciangreen/counter
+          path: counter
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Unit tests
+        working-directory: presenter
+        run: npm test

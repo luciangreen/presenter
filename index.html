@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presenter</title>
+  <link rel="stylesheet" href="/shared/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="bar pbar">
+    <h1>Presenter</h1>
+    <span id="docTitle" class="quiet"></span>
+    <span class="spacer"></span>
+    <button id="present" class="primary">▶ Present</button>
+    <button id="new">New</button>
+    <button id="open">Open…</button>
+    <button id="save">Save</button>
+    <select id="export" aria-label="Export"><option value="">Export…</option><option value="html">Slides to present anywhere (.html)</option><option value="md">Outline with notes (.md)</option><option value="pl">Prolog form (.pl)</option></select>
+  </header>
+  <main class="presenter">
+    <aside class="panel side" aria-label="The talk">
+      <h2>The talk</h2>
+      <label>Title <input id="title" type="text"></label>
+      <label>Intro line <input id="subtitle" type="text" placeholder="What the talk is about"></label>
+      <div class="two">
+        <label>Minutes <input id="minutes" type="number" min="1" max="600" step="1"></label>
+        <label>Minutes a slide <input id="pace" type="number" min="0.5" max="10" step="0.5"></label>
+      </div>
+      <label>Layout <select id="layout"></select></label>
+      <h2>Speaker</h2>
+      <div class="two">
+        <label>Name <input id="spName" type="text"></label>
+        <label>Speaker ID <input id="spId" type="text"></label>
+      </div>
+      <label>Role <input id="spRole" type="text" placeholder="e.g. Lucian Academy"></label>
+      <h2>References</h2>
+      <div id="refs"></div>
+      <form id="addRef" class="row"><input id="refText" type="text" placeholder="Author (year) Title"><input id="refFor" type="text" placeholder="cite on slides about…" class="short"><button>Add</button></form>
+      <h2>What it's about</h2>
+      <textarea id="text" rows="6" placeholder="Paste or write the talk's text. A short line on its own is a heading; blank lines separate paragraphs."></textarea>
+      <div id="sources"></div>
+      <div class="row">
+        <button id="addWriter" title="A .writer.json file from Writer">+ Writer document</button>
+        <button id="addCounter" title="A .counter.json file from Counter">+ Counter workbook</button>
+      </div>
+      <div class="row"><button id="build" class="primary">Build the deck</button></div>
+      <div id="plan" class="plan" aria-live="polite"></div>
+    </aside>
+    <section class="panel stage" aria-label="Slides">
+      <div id="preview" class="preview"></div>
+      <div class="edit">
+        <label>Slide title <input id="sTitle" type="text"></label>
+        <label>Points (one per line) <textarea id="sBullets" rows="4"></textarea></label>
+        <label>Speaker notes <textarea id="sNotes" rows="3"></textarea></label>
+        <div class="row"><button id="prev">◀</button><span id="where" class="quiet"></span><button id="next">▶</button><span class="spacer"></span><button id="undo">Undo</button><button id="redo">Redo</button><button id="delSlide">Delete slide</button></div>
+      </div>
+      <div id="strip" class="strip" aria-label="All slides"></div>
+      <form id="say" class="row say"><input id="sayText" type="text" placeholder='Tell Lucian: "make it 10 minutes", "add a slide about results", "use the minimal layout", "present"'><button>Do</button></form>
+      <p id="reply" class="quiet" aria-live="polite"></p>
+    </section>
+  </main>
+  <div id="show" class="show hidden" role="dialog" aria-label="Presenting">
+    <div id="showSlide" class="showslide"></div>
+    <div class="showbar"><button id="showPrev">◀</button><span id="showWhere"></span><span id="timer" class="timer"></span><button id="showNotes">Notes</button><button id="showNext">▶</button><button id="showEnd">End</button></div>
+    <div id="showNotesText" class="shownotes hidden"></div>
+  </div>
+</body>
+</html>

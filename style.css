@@ -1,0 +1,35 @@
+body { margin: 0; }
+.pbar { flex-wrap: wrap; gap: 8px; }
+main.presenter { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(0, 2.4fr); gap: 12px; padding: 12px; align-items: start; }
+.presenter .panel { margin: 0; min-width: 0; }
+.side h2 { font-size: 1rem; margin: 12px 0 6px; }
+.side label { display: block; margin: 4px 0; font-size: .9em; }
+.side label input, .side label select { display: block; width: 100%; box-sizing: border-box; margin-top: 2px; }
+.side .two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+textarea { width: 100%; box-sizing: border-box; font: inherit; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.row input[type=text] { flex: 1; min-width: 0; }
+.row input.short { flex: .7; }
+.refrow, .srcrow { display: flex; gap: 6px; align-items: center; margin: 3px 0; font-size: .9em; }
+.refrow span, .srcrow span { flex: 1; min-width: 0; }
+.plan { font-size: .9em; margin-top: 8px; }
+.plan .fits { color: #2e7d32; } .plan .over { color: #c0392b; }
+.preview { max-width: 900px; }
+.edit { max-width: 900px; margin-top: 10px; }
+.edit label { display: block; margin: 4px 0; font-size: .9em; }
+.edit input[type=text] { display: block; width: 100%; box-sizing: border-box; }
+.strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin-top: 12px; }
+.strip .thumb { cursor: pointer; border: 2px solid transparent; border-radius: 8px; position: relative; }
+.strip .thumb.on { border-color: #3a7bd5; }
+.strip .thumb .slide { pointer-events: none; }
+.strip .thumb .t { position: absolute; top: 2px; left: 6px; font-size: 11px; color: #888; z-index: 1; }
+.say { margin-top: 12px; }
+.show { position: fixed; inset: 0; background: #111; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.show.hidden { display: none; }
+.showslide { width: min(100vw, calc((100vh - 60px) * 16 / 9)); }
+.showbar { display: flex; gap: 12px; align-items: center; color: #bbb; padding: 8px; font-size: 14px; }
+.timer { font-variant-numeric: tabular-nums; }
+.timer.late { color: #ff8a65; }
+.shownotes { position: fixed; top: 0; left: 0; right: 0; background: #000d; color: #eee; padding: 12px 18px; font-size: 16px; max-height: 40vh; overflow: auto; }
+.hidden { display: none; }
+@media (max-width: 820px) { main.presenter { grid-template-columns: 1fr; padding: 8px; } .pbar h1 { font-size: 1.1rem; } }
