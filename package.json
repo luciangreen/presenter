@@ -4,7 +4,8 @@
   "description": "Presenter: Lucian Office slide decks built from a length of time, references, a speaker, an intro and a layout, fed by Writer and Counter",
   "type": "module",
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "ios": "node io/make-ios.mjs"
   },
   "license": "BSD-3-Clause"
 }

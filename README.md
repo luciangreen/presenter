@@ -99,3 +99,7 @@ GitHub Actions runs them with the core and Counter checked out beside Presenter.
 
 - A rehearsal timer that records how long each slide took.
 - Export to .pptx and PDF.
+
+## Inputs and outputs
+
+`io/ios.txt` lists 200 inputs and the outputs they give, from real runs of this repo's functions (the list of functions is in `io/cases.mjs`; the inputs come from a fixed seed, so they are the same every time). `npm test` runs them again and fails if any output changes. If a change is meant, run `npm run ios` to write the new outputs and check the diff.
