@@ -1,0 +1,402 @@
+Presenter: 200 inputs and outputs, from real runs (npm run ios writes this file; npm test checks it).
+
+1. bullet("The research shows that about dog cat thinks.", 12)
+   => "The research shows that about dog cat thinks"
+2. slideCount(20, 1.5)
+   => 13
+3. shareOut([4,4,1,3,2,1], 10)
+   => [3,2,1,2,1,1]
+4. contentFromText("# tree\n\nBook happy finds prolog blue. Garden sells about house book. Idea house dog music house a runs teacher. A person prolog the. Happy list true music.\n\n## meditates teacher runs\n\nData buys data proof value reads happy true thinks. With value meditates a buys value the dog a. Reads teacher runs sells with. Writes simple true logic a runs.")
+   => [{"heading":"tree","paragraphs":["Book happy finds prolog blue. Garden sells about house book. Idea house dog music house a runs teacher. A person prolog the. Happy list true music."]},{"heading":"meditates teacher runs","paragraphs":["Data buys data proof value reads happy true thinks. With value meditates a buys value the dog a. Reads teacher runs sells with. Writes simple true logic a runs."]}]
+5. sentencesOf("The sells about runs reads. Student runs buys. Reads with with garden blue logic dog. True apple book happy dog quickly meditates true writes. True blue blue garden.")
+   => ["The sells about runs reads.","Student runs buys.","Reads with with garden blue logic dog.","True apple book happy dog quickly meditates true writes.","True blue blue garden."]
+6. figuresFromRows([["","n/a",""]], "sells music")
+   => []
+7. pickFigures([{"label":"F0","value":"308","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"265","how":"","sheet":"S"},{"label":"F2","value":"967","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"330","how":"=SUM(B1:B2)","sheet":"S"}], 1)
+   => [{"label":"F0","value":"308","how":"=SUM(B1:B2)","sheet":"S"}]
+8. bullet("music the simple runs false about finds buys quickly music about.", 16)
+   => "music the simple runs false about finds buys quickly music about"
+9. slideCount(45, 1)
+   => 45
+10. shareOut([5,5], 0)
+   => [0,0]
+11. contentFromText("# finds\n\nGreen green list apple data about algorithm. Reads student simple the meditates thinks number. About value student reads a. Happy about tree blue logic writes dog. Apple true reads tree list with tree meditates the.\n\n## cat\n\nHappy a list music a number. Apple student happy teacher buys sells blue. Sells cat apple true data happy simple. Algorithm green reads writes buys tree.")
+   => [{"heading":"finds","paragraphs":["Green green list apple data about algorithm. Reads student simple the meditates thinks number. About value student reads a. Happy about tree blue logic writes dog. Apple true reads tree list with tree meditates the."]},{"heading":"cat","paragraphs":["Happy a list music a number. Apple student happy teacher buys sells blue. Sells cat apple true data happy simple. Algorithm green reads writes buys tree."]}]
+12. sentencesOf("Algorithm buys true and house student. Person garden true blue writes.")
+   => ["Algorithm buys true and house student.","Person garden true blue writes."]
+13. figuresFromRows([["Profit","","=SUM(B1:B3)"],["finds garden","","=B2-B3"]], "a")
+   => []
+14. pickFigures([{"label":"F0","value":"273","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"495","how":"","sheet":"S"},{"label":"F2","value":"977","how":"","sheet":"S"},{"label":"F3","value":"480","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"634","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"786","how":"","sheet":"S"},{"label":"F6","value":"180","how":"","sheet":"S"},{"label":"F7","value":"886","how":"","sheet":"S"},{"label":"F8","value":"585","how":"","sheet":"S"},{"label":"F9","value":"615","how":"","sheet":"S"},{"label":"F10","value":"785","how":"","sheet":"S"},{"label":"F11","value":"393","how":"","sheet":"S"}], 6)
+   => [{"label":"F0","value":"273","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"480","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"634","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"495","how":"","sheet":"S"},{"label":"F2","value":"977","how":"","sheet":"S"},{"label":"F5","value":"786","how":"","sheet":"S"}]
+15. bullet("However, false tree cat with number finds reads.", 16)
+   => "However, false tree cat with number finds reads"
+16. slideCount(20, 3)
+   => 7
+17. shareOut([0], 16)
+   => [0]
+18. contentFromText("# garden runs person\n\nStudent runs value runs. Sells the number blue sells.\n\n## reads teacher\n\nData dog list book number list. Data green data happy finds music apple. Idea blue runs simple data teacher. Algorithm about green cat. With and happy teacher book algorithm happy.")
+   => [{"heading":"garden runs person","paragraphs":["Student runs value runs. Sells the number blue sells."]},{"heading":"reads teacher","paragraphs":["Data dog list book number list. Data green data happy finds music apple. Idea blue runs simple data teacher. Algorithm about green cat. With and happy teacher book algorithm happy."]}]
+19. sentencesOf("Algorithm music the logic runs. Number prolog writes tree a. About garden and apple the green prolog dog. List with teacher tree student.")
+   => ["Algorithm music the logic runs.","Number prolog writes tree a.","About garden and apple the green prolog dog.","List with teacher tree student."]
+20. figuresFromRows([["Total","n/a","=SUM(B1:B3)"],["Total","n/a",""],["Profit",562,"=B2-B3"],["Total","n/a",""]], "about green")
+   => [{"label":"Profit","value":"562","how":"=B2-B3","sheet":"about green"}]
+21. pickFigures([{"label":"F0","value":"512","how":"","sheet":"S"},{"label":"F1","value":"361","how":"","sheet":"S"},{"label":"F2","value":"566","how":"","sheet":"S"},{"label":"F3","value":"221","how":"","sheet":"S"},{"label":"F4","value":"415","how":"","sheet":"S"},{"label":"F5","value":"134","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"323","how":"","sheet":"S"},{"label":"F7","value":"368","how":"","sheet":"S"},{"label":"F8","value":"470","how":"","sheet":"S"},{"label":"F9","value":"710","how":"","sheet":"S"},{"label":"F10","value":"982","how":"=SUM(B1:B2)","sheet":"S"}], 8)
+   => [{"label":"F5","value":"134","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F10","value":"982","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"512","how":"","sheet":"S"},{"label":"F1","value":"361","how":"","sheet":"S"},{"label":"F2","value":"566","how":"","sheet":"S"},{"label":"F3","value":"221","how":"","sheet":"S"},{"label":"F4","value":"415","how":"","sheet":"S"},{"label":"F6","value":"323","how":"","sheet":"S"}]
+22. bullet("In fact, tree sells tree about green.", 16)
+   => "In fact, tree sells tree about green"
+23. slideCount(60, 2)
+   => 30
+24. shareOut([2], 6)
+   => [2]
+25. contentFromText("# about\n\nQuickly teacher thinks. Music happy sells algorithm dog simple tree.\n\n## prolog number\n\nGreen logic house false quickly house false. Proof proof finds teacher garden false person happy music.")
+   => [{"heading":"about","paragraphs":["Quickly teacher thinks. Music happy sells algorithm dog simple tree."]},{"heading":"prolog number","paragraphs":["Green logic house false quickly house false. Proof proof finds teacher garden false person happy music."]}]
+26. sentencesOf("House apple number prolog happy music happy. Student false book tree happy number buys true. Student data number list runs student simple book buys. Thinks teacher cat true the blue writes algorithm green. Writes book teacher algorithm.")
+   => ["House apple number prolog happy music happy.","Student false book tree happy number buys true.","Student data number list runs student simple book buys.","Thinks teacher cat true the blue writes algorithm green.","Writes book teacher algorithm."]
+27. figuresFromRows([["Total","",""]], "music blue")
+   => []
+28. pickFigures([{"label":"F0","value":"248","how":"","sheet":"S"},{"label":"F1","value":"57","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"63","how":"","sheet":"S"},{"label":"F3","value":"828","how":"","sheet":"S"},{"label":"F4","value":"292","how":"","sheet":"S"},{"label":"F5","value":"448","how":"","sheet":"S"},{"label":"F6","value":"592","how":"","sheet":"S"}], 6)
+   => [{"label":"F1","value":"57","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"248","how":"","sheet":"S"},{"label":"F2","value":"63","how":"","sheet":"S"},{"label":"F3","value":"828","how":"","sheet":"S"},{"label":"F4","value":"292","how":"","sheet":"S"},{"label":"F5","value":"448","how":"","sheet":"S"}]
+29. bullet("The research shows that student finds teacher teacher true meditates garden cat meditates data a cat apple idea a list student.", 12)
+   => "The research shows that student finds teacher teacher true meditates garden cat…"
+30. slideCount(1, 1)
+   => 3
+31. shareOut([4,2,5], 1)
+   => [1,0,0]
+32. contentFromText("# logic\n\nAnd and dog house student cat reads garden. Algorithm prolog reads green sells buys. With meditates cat sells data. Person quickly false blue and quickly simple value.\n\n## student proof and\n\nTeacher idea music. Dog about happy dog about buys. Blue simple blue.")
+   => [{"heading":"logic","paragraphs":["And and dog house student cat reads garden. Algorithm prolog reads green sells buys. With meditates cat sells data. Person quickly false blue and quickly simple value."]},{"heading":"student proof and","paragraphs":["Teacher idea music. Dog about happy dog about buys. Blue simple blue."]}]
+33. sentencesOf("Sells happy buys idea cat algorithm list a person. With logic garden tree. Happy teacher student. A thinks idea true algorithm cat green. With thinks tree prolog finds.")
+   => ["Sells happy buys idea cat algorithm list a person.","With logic garden tree.","Happy teacher student.","A thinks idea true algorithm cat green.","With thinks tree prolog finds."]
+34. figuresFromRows([["","","=SUM(B1:B3)"],["value",78,"=B2-B3"],["",312,"=SUM(B1:B3)"]], "logic")
+   => [{"label":"value","value":"78","how":"=B2-B3","sheet":"logic"}]
+35. pickFigures([{"label":"F0","value":"3","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"996","how":"","sheet":"S"},{"label":"F2","value":"304","how":"","sheet":"S"},{"label":"F3","value":"746","how":"","sheet":"S"},{"label":"F4","value":"703","how":"","sheet":"S"},{"label":"F5","value":"693","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"659","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F7","value":"474","how":"","sheet":"S"}], 8)
+   => [{"label":"F0","value":"3","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"693","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"659","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"996","how":"","sheet":"S"},{"label":"F2","value":"304","how":"","sheet":"S"},{"label":"F3","value":"746","how":"","sheet":"S"},{"label":"F4","value":"703","how":"","sheet":"S"},{"label":"F7","value":"474","how":"","sheet":"S"}]
+36. bullet("The research shows that cat student teacher simple cat writes number logic cat the writes.", 12)
+   => "The research shows that cat student teacher simple cat writes number logic…"
+37. slideCount(1, 2)
+   => 3
+38. shareOut([0,3], 7)
+   => [0,3]
+39. contentFromText("# house about meditates\n\nCat teacher sells thinks. Idea person list buys simple logic quickly runs. Number tree simple buys apple sells dog meditates. A house quickly proof music. Book buys apple green thinks teacher meditates writes.\n\n## idea garden\n\nDog a data number. Runs runs the tree proof sells music sells. Green dog finds blue false prolog buys. Proof data data true sells finds garden.")
+   => [{"heading":"house about meditates","paragraphs":["Cat teacher sells thinks. Idea person list buys simple logic quickly runs. Number tree simple buys apple sells dog meditates. A house quickly proof music. Book buys apple green thinks teacher meditates writes."]},{"heading":"idea garden","paragraphs":["Dog a data number. Runs runs the tree proof sells music sells. Green dog finds blue false prolog buys. Proof data data true sells finds garden."]}]
+40. sentencesOf("The garden prolog apple data house proof prolog. Value book sells writes meditates.")
+   => ["The garden prolog apple data house proof prolog.","Value book sells writes meditates."]
+41. figuresFromRows([["","$28,350","=B2-B3"],["Profit",735,""],["writes","",""],["Total","n/a","=B2-B3"],["Total","",""]], "apple")
+   => [{"label":"Profit","value":"735","how":"","sheet":"apple"}]
+42. pickFigures([{"label":"F0","value":"51","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"874","how":"","sheet":"S"},{"label":"F2","value":"802","how":"","sheet":"S"},{"label":"F3","value":"978","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"735","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"157","how":"","sheet":"S"},{"label":"F6","value":"230","how":"","sheet":"S"},{"label":"F7","value":"836","how":"","sheet":"S"},{"label":"F8","value":"960","how":"=SUM(B1:B2)","sheet":"S"}], 1)
+   => [{"label":"F0","value":"51","how":"=SUM(B1:B2)","sheet":"S"}]
+43. bullet("The research shows that sells quickly apple algorithm simple proof and reads book student with reads about with blue book.", 16)
+   => "The research shows that sells quickly apple algorithm simple proof and reads book student with reads…"
+44. slideCount(5, 2)
+   => 3
+45. shareOut([3,8,3], 9)
+   => [2,5,2]
+46. contentFromText("# proof proof\n\nRuns simple true list reads apple proof prolog. Person and algorithm false green idea book teacher. With garden tree idea value runs. Sells student simple false and data.\n\n## green\n\nMusic house finds list reads sells logic with. Music about reads music. Simple the blue house. Garden value student. Runs house runs prolog teacher quickly algorithm about.")
+   => [{"heading":"proof proof","paragraphs":["Runs simple true list reads apple proof prolog. Person and algorithm false green idea book teacher. With garden tree idea value runs. Sells student simple false and data."]},{"heading":"green","paragraphs":["Music house finds list reads sells logic with. Music about reads music. Simple the blue house. Garden value student. Runs house runs prolog teacher quickly algorithm about."]}]
+47. sentencesOf("Garden proof algorithm cat. Green sells the false happy reads happy blue. Dog list runs music number.")
+   => ["Garden proof algorithm cat.","Green sells the false happy reads happy blue.","Dog list runs music number."]
+48. figuresFromRows([["Profit","n/a",""],["tree","n/a",""],["Profit",895,""]], "cat")
+   => [{"label":"Profit","value":"895","how":"","sheet":"cat"}]
+49. pickFigures([{"label":"F0","value":"327","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"303","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"829","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"791","how":"","sheet":"S"}], 4)
+   => [{"label":"F0","value":"327","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"303","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"829","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"791","how":"","sheet":"S"}]
+50. bullet("about algorithm data runs list a data.", 12)
+   => "about algorithm data runs list a data"
+51. slideCount(1, 3)
+   => 3
+52. shareOut([6,5,7,7], 12)
+   => [3,3,3,3]
+53. contentFromText("# value value\n\nThe dog simple. Meditates prolog finds teacher house tree sells. Thinks prolog number cat number.\n\n## house sells reads\n\nHouse apple blue a book. List runs person list quickly logic. Finds logic about happy thinks meditates. The logic the house blue finds. Data quickly number person.")
+   => [{"heading":"value value","paragraphs":["The dog simple. Meditates prolog finds teacher house tree sells. Thinks prolog number cat number."]},{"heading":"house sells reads","paragraphs":["House apple blue a book. List runs person list quickly logic. Finds logic about happy thinks meditates. The logic the house blue finds. Data quickly number person."]}]
+54. sentencesOf("The green teacher a and. Music the value value quickly.")
+   => ["The green teacher a and.","Music the value value quickly."]
+55. figuresFromRows([["Profit","",""],["","$13,738",""],["","n/a","=SUM(B1:B3)"],["finds","$49,968","=B2-B3"],["prolog","","=SUM(B1:B3)"],["number",691,""]], "reads prolog")
+   => [{"label":"finds","value":"$49,968","how":"=B2-B3","sheet":"reads prolog"},{"label":"number","value":"691","how":"","sheet":"reads prolog"}]
+56. pickFigures([{"label":"F0","value":"447","how":"","sheet":"S"},{"label":"F1","value":"745","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"399","how":"","sheet":"S"},{"label":"F3","value":"999","how":"","sheet":"S"},{"label":"F4","value":"655","how":"","sheet":"S"},{"label":"F5","value":"407","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"958","how":"","sheet":"S"},{"label":"F7","value":"768","how":"","sheet":"S"},{"label":"F8","value":"433","how":"","sheet":"S"},{"label":"F9","value":"483","how":"","sheet":"S"},{"label":"F10","value":"309","how":"=SUM(B1:B2)","sheet":"S"}], 1)
+   => [{"label":"F1","value":"745","how":"=SUM(B1:B2)","sheet":"S"}]
+57. bullet("However, book false finds teacher with apple tree value.", 8)
+   => "However, book false finds teacher with apple tree…"
+58. slideCount(20, 1.5)
+   => 13
+59. shareOut([4,5,4,1,0], 18)
+   => [4,5,4,1,0]
+60. contentFromText("# false house dog\n\nStudent data and writes value value. Buys about tree and algorithm.\n\n## and person\n\nValue meditates tree. Cat idea happy. Green tree the teacher book. Garden runs about value sells idea house.")
+   => [{"heading":"false house dog","paragraphs":["Student data and writes value value. Buys about tree and algorithm."]},{"heading":"and person","paragraphs":["Value meditates tree. Cat idea happy. Green tree the teacher book. Garden runs about value sells idea house."]}]
+61. sentencesOf("Blue about finds teacher blue number quickly house sells. Sells list runs logic. True student dog true garden teacher.")
+   => ["Blue about finds teacher blue number quickly house sells.","Sells list runs logic.","True student dog true garden teacher."]
+62. figuresFromRows([["true and","",""],["Profit","","=SUM(B1:B3)"],["Profit","$29,608","=SUM(B1:B3)"]], "about")
+   => [{"label":"Profit","value":"$29,608","how":"=SUM(B1:B3)","sheet":"about"}]
+63. pickFigures([{"label":"F0","value":"80","how":"=SUM(B1:B2)","sheet":"S"}], 3)
+   => [{"label":"F0","value":"80","how":"=SUM(B1:B2)","sheet":"S"}]
+64. bullet("The research shows that person value book writes finds meditates teacher thinks runs data apple algorithm student green list number algorithm quickly happy student a.", 12)
+   => "The research shows that person value book writes finds meditates teacher thinks…"
+65. slideCount(45, 1)
+   => 45
+66. shareOut([0,1,3,3,5,3], 6)
+   => [0,1,1,1,2,1]
+67. contentFromText("# proof idea\n\nBuys teacher number list blue data house sells. House happy writes proof number data happy. True dog cat. Cat music prolog list green proof idea blue.\n\n## writes prolog\n\nThe number book person sells meditates and tree person. Quickly writes list reads. Garden algorithm logic blue a with and runs a. Finds teacher sells.")
+   => [{"heading":"proof idea","paragraphs":["Buys teacher number list blue data house sells. House happy writes proof number data happy. True dog cat. Cat music prolog list green proof idea blue."]},{"heading":"writes prolog","paragraphs":["The number book person sells meditates and tree person. Quickly writes list reads. Garden algorithm logic blue a with and runs a. Finds teacher sells."]}]
+68. sentencesOf("Cat meditates blue algorithm data. Person green cat algorithm blue simple a. List music finds cat with.")
+   => ["Cat meditates blue algorithm data.","Person green cat algorithm blue simple a.","List music finds cat with."]
+69. figuresFromRows([["",530,"=SUM(B1:B3)"],["data garden","$45,185","=B2-B3"],["runs house","$1,528",""],["Total","$27,681","=B2-B3"],["thinks","",""]], "true value")
+   => [{"label":"data garden","value":"$45,185","how":"=B2-B3","sheet":"true value"},{"label":"runs house","value":"$1,528","how":"","sheet":"true value"},{"label":"Total","value":"$27,681","how":"=B2-B3","sheet":"true value"}]
+70. pickFigures([{"label":"F0","value":"482","how":"","sheet":"S"},{"label":"F1","value":"542","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"627","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"93","how":"","sheet":"S"},{"label":"F4","value":"686","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"769","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"748","how":"","sheet":"S"},{"label":"F7","value":"711","how":"","sheet":"S"}], 6)
+   => [{"label":"F1","value":"542","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"627","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"686","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"769","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"482","how":"","sheet":"S"},{"label":"F3","value":"93","how":"","sheet":"S"}]
+71. bullet("person music and proof list runs logic teacher thinks idea true proof writes about proof a.", 8)
+   => "person music and proof list runs logic teacher…"
+72. slideCount(5, 1.5)
+   => 3
+73. shareOut([8,0,8], 3)
+   => [2,0,1]
+74. contentFromText("# true number\n\nSimple false writes about teacher writes green simple. Garden book quickly dog.\n\n## algorithm with\n\nThinks prolog quickly happy runs music. Book about proof book. With value value about list apple. Data sells dog proof reads proof a.")
+   => [{"heading":"true number","paragraphs":["Simple false writes about teacher writes green simple. Garden book quickly dog."]},{"heading":"algorithm with","paragraphs":["Thinks prolog quickly happy runs music. Book about proof book. With value value about list apple. Data sells dog proof reads proof a."]}]
+75. sentencesOf("With number list value student runs writes quickly. Finds with apple reads. And tree about prolog true. Number student house.")
+   => ["With number list value student runs writes quickly.","Finds with apple reads.","And tree about prolog true.","Number student house."]
+76. figuresFromRows([["and","n/a",""],["Profit",305,""],["",244,"=B2-B3"],["Profit","$75,278","=SUM(B1:B3)"],["Profit",559,"=SUM(B1:B3)"],["logic cat",780,""]], "number")
+   => [{"label":"Profit","value":"305","how":"","sheet":"number"},{"label":"Profit","value":"$75,278","how":"=SUM(B1:B3)","sheet":"number"},{"label":"Profit","value":"559","how":"=SUM(B1:B3)","sheet":"number"},{"label":"logic cat","value":"780","how":"","sheet":"number"}]
+77. pickFigures([{"label":"F0","value":"683","how":"","sheet":"S"},{"label":"F1","value":"650","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"323","how":"","sheet":"S"},{"label":"F3","value":"654","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"163","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"296","how":"","sheet":"S"},{"label":"F6","value":"346","how":"","sheet":"S"},{"label":"F7","value":"500","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F8","value":"297","how":"","sheet":"S"}], 6)
+   => [{"label":"F1","value":"650","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"654","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"163","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F7","value":"500","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"683","how":"","sheet":"S"},{"label":"F2","value":"323","how":"","sheet":"S"}]
+78. bullet("and with music music runs the prolog the person house reads sells simple list.", 8)
+   => "and with music music runs the prolog the…"
+79. slideCount(20, 1.5)
+   => 13
+80. shareOut([3,7], 6)
+   => [2,4]
+81. contentFromText("# teacher quickly garden\n\nQuickly reads value number value runs. Buys meditates happy and meditates true.\n\n## blue\n\nReads runs sells algorithm with simple value. House happy finds cat a.")
+   => [{"heading":"teacher quickly garden","paragraphs":["Quickly reads value number value runs. Buys meditates happy and meditates true."]},{"heading":"blue","paragraphs":["Reads runs sells algorithm with simple value. House happy finds cat a."]}]
+82. sentencesOf("Teacher sells simple student. Proof data idea true sells.")
+   => ["Teacher sells simple student.","Proof data idea true sells."]
+83. figuresFromRows([["data",703,""],["","","=B2-B3"],["Total",49,"=B2-B3"],["Profit","$73,597",""],["","n/a",""]], "teacher")
+   => [{"label":"data","value":"703","how":"","sheet":"teacher"},{"label":"Total","value":"49","how":"=B2-B3","sheet":"teacher"},{"label":"Profit","value":"$73,597","how":"","sheet":"teacher"}]
+84. pickFigures([{"label":"F0","value":"771","how":"","sheet":"S"},{"label":"F1","value":"172","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"934","how":"","sheet":"S"},{"label":"F3","value":"375","how":"","sheet":"S"},{"label":"F4","value":"512","how":"","sheet":"S"},{"label":"F5","value":"709","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"260","how":"","sheet":"S"},{"label":"F7","value":"865","how":"","sheet":"S"},{"label":"F8","value":"709","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F9","value":"154","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F10","value":"206","how":"","sheet":"S"},{"label":"F11","value":"65","how":"","sheet":"S"}], 4)
+   => [{"label":"F1","value":"172","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"709","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F8","value":"709","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F9","value":"154","how":"=SUM(B1:B2)","sheet":"S"}]
+85. bullet("In fact, quickly writes happy sells meditates a meditates prolog a happy teacher tree garden.", 8)
+   => "In fact, quickly writes happy sells meditates a…"
+86. slideCount(20, 1.5)
+   => 13
+87. shareOut([4,0], 4)
+   => [4,0]
+88. contentFromText("# thinks data prolog\n\nMeditates a prolog data person thinks prolog. A and happy proof blue person runs buys list.\n\n## music list\n\nBuys happy value. About cat person true with true and. Sells music value apple. Garden meditates garden. Garden garden teacher prolog false algorithm algorithm buys happy.")
+   => [{"heading":"thinks data prolog","paragraphs":["Meditates a prolog data person thinks prolog. A and happy proof blue person runs buys list."]},{"heading":"music list","paragraphs":["Buys happy value. About cat person true with true and. Sells music value apple. Garden meditates garden. Garden garden teacher prolog false algorithm algorithm buys happy."]}]
+89. sentencesOf("Prolog thinks green list list garden. Person meditates logic.")
+   => ["Prolog thinks green list list garden.","Person meditates logic."]
+90. figuresFromRows([["Profit","n/a",""]], "finds")
+   => []
+91. pickFigures([{"label":"F0","value":"173","how":"","sheet":"S"}], 4)
+   => [{"label":"F0","value":"173","how":"","sheet":"S"}]
+92. bullet("In fact, reads proof finds blue blue reads teacher apple writes quickly book list true dog music teacher proof student thinks.", 12)
+   => "In fact, reads proof finds blue blue reads teacher apple writes quickly…"
+93. slideCount(3, 1.5)
+   => 3
+94. shareOut([1,7,4,8], 13)
+   => [1,4,3,5]
+95. contentFromText("# idea happy\n\nData and music sells. Person music runs sells value the. House green algorithm writes house algorithm and prolog idea.\n\n## quickly\n\nStudent list student. Apple true thinks reads person house cat false. Happy reads apple true simple cat with. True green music book proof.")
+   => [{"heading":"idea happy","paragraphs":["Data and music sells. Person music runs sells value the. House green algorithm writes house algorithm and prolog idea."]},{"heading":"quickly","paragraphs":["Student list student. Apple true thinks reads person house cat false. Happy reads apple true simple cat with. True green music book proof."]}]
+96. sentencesOf("Simple writes quickly value proof apple music. Thinks teacher logic. Data simple false green.")
+   => ["Simple writes quickly value proof apple music.","Thinks teacher logic.","Data simple false green."]
+97. figuresFromRows([["","$67,991","=SUM(B1:B3)"],["Profit","n/a","=SUM(B1:B3)"],["","","=SUM(B1:B3)"]], "with idea")
+   => []
+98. pickFigures([{"label":"F0","value":"331","how":"","sheet":"S"},{"label":"F1","value":"84","how":"=SUM(B1:B2)","sheet":"S"}], 2)
+   => [{"label":"F1","value":"84","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"331","how":"","sheet":"S"}]
+99. bullet("In fact, music music teacher book proof garden apple value algorithm quickly a about person buys green.", 8)
+   => "In fact, music music teacher book proof garden…"
+100. slideCount(45, 3)
+   => 15
+101. shareOut([0,3,6,5], 13)
+   => [0,3,5,5]
+102. contentFromText("# meditates\n\nRuns quickly book music thinks dog algorithm reads idea. About logic a algorithm prolog data about.\n\n## book logic\n\nWrites happy writes student the house. List dog happy with true value. Value quickly blue the idea buys a garden quickly.")
+   => [{"heading":"meditates","paragraphs":["Runs quickly book music thinks dog algorithm reads idea. About logic a algorithm prolog data about."]},{"heading":"book logic","paragraphs":["Writes happy writes student the house. List dog happy with true value. Value quickly blue the idea buys a garden quickly."]}]
+103. sentencesOf("Dog happy algorithm quickly blue list logic. Green tree person person. List happy reads cat. Book idea green value happy prolog.")
+   => ["Dog happy algorithm quickly blue list logic.","Green tree person person.","List happy reads cat.","Book idea green value happy prolog."]
+104. figuresFromRows([["","",""],["","$68,453","=B2-B3"],["","n/a",""],["Total","",""],["Profit","$58,883",""]], "meditates finds")
+   => [{"label":"Profit","value":"$58,883","how":"","sheet":"meditates finds"}]
+105. pickFigures([{"label":"F0","value":"37","how":"","sheet":"S"},{"label":"F1","value":"108","how":"","sheet":"S"}], 4)
+   => [{"label":"F0","value":"37","how":"","sheet":"S"},{"label":"F1","value":"108","how":"","sheet":"S"}]
+106. bullet("The research shows that cat with the dog true number reads about sells list sells blue a tree sells list prolog teacher value prolog and teacher.", 16)
+   => "The research shows that cat with the dog true number reads about sells list sells blue…"
+107. slideCount(3, 2)
+   => 3
+108. shareOut([1,8], 0)
+   => [0,0]
+109. contentFromText("# proof logic\n\nStudent tree dog with value the meditates value music. Tree data idea music logic writes. Quickly a teacher writes person thinks. Proof and simple dog runs green.\n\n## garden prolog idea\n\nNumber simple sells blue value music the a person. Blue teacher writes the finds.")
+   => [{"heading":"proof logic","paragraphs":["Student tree dog with value the meditates value music. Tree data idea music logic writes. Quickly a teacher writes person thinks. Proof and simple dog runs green."]},{"heading":"garden prolog idea","paragraphs":["Number simple sells blue value music the a person. Blue teacher writes the finds."]}]
+110. sentencesOf("House writes happy true tree blue cat buys. Thinks house reads.")
+   => ["House writes happy true tree blue cat buys.","Thinks house reads."]
+111. figuresFromRows([["","n/a","=SUM(B1:B3)"],["","",""],["","n/a",""],["Profit","",""],["number music","$31,385",""],["Profit","$24,918","=SUM(B1:B3)"]], "finds")
+   => [{"label":"number music","value":"$31,385","how":"","sheet":"finds"},{"label":"Profit","value":"$24,918","how":"=SUM(B1:B3)","sheet":"finds"}]
+112. pickFigures([{"label":"F0","value":"364","how":"","sheet":"S"},{"label":"F1","value":"318","how":"","sheet":"S"}], 7)
+   => [{"label":"F0","value":"364","how":"","sheet":"S"},{"label":"F1","value":"318","how":"","sheet":"S"}]
+113. bullet("writes reads prolog quickly cat.", 12)
+   => "writes reads prolog quickly cat"
+114. slideCount(15, 2)
+   => 8
+115. shareOut([3], 8)
+   => [3]
+116. contentFromText("# writes\n\nProof reads garden. Blue sells true dog meditates buys number value list. Proof student false person.\n\n## blue\n\nList number apple garden meditates teacher. Buys false about idea and tree logic. Blue house a about sells.")
+   => [{"heading":"writes","paragraphs":["Proof reads garden. Blue sells true dog meditates buys number value list. Proof student false person."]},{"heading":"blue","paragraphs":["List number apple garden meditates teacher. Buys false about idea and tree logic. Blue house a about sells."]}]
+117. sentencesOf("Apple reads green logic prolog sells book. True logic about true number happy.")
+   => ["Apple reads green logic prolog sells book.","True logic about true number happy."]
+118. figuresFromRows([["quickly the","n/a",""],["Profit",391,""],["runs a","",""],["",354,"=B2-B3"]], "data")
+   => [{"label":"Profit","value":"391","how":"","sheet":"data"}]
+119. pickFigures([{"label":"F0","value":"227","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"334","how":"","sheet":"S"},{"label":"F2","value":"714","how":"","sheet":"S"},{"label":"F3","value":"207","how":"","sheet":"S"},{"label":"F4","value":"211","how":"","sheet":"S"},{"label":"F5","value":"525","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"837","how":"","sheet":"S"},{"label":"F7","value":"649","how":"","sheet":"S"},{"label":"F8","value":"915","how":"","sheet":"S"},{"label":"F9","value":"111","how":"","sheet":"S"},{"label":"F10","value":"840","how":"","sheet":"S"}], 5)
+   => [{"label":"F0","value":"227","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"525","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"334","how":"","sheet":"S"},{"label":"F2","value":"714","how":"","sheet":"S"},{"label":"F3","value":"207","how":"","sheet":"S"}]
+120. bullet("However, sells thinks writes false dog proof data finds cat algorithm prolog about simple teacher and runs and the.", 12)
+   => "However, sells thinks writes false dog proof data finds cat algorithm prolog…"
+121. slideCount(1, 3)
+   => 3
+122. shareOut([7,2,2,3,1,6], 16)
+   => [5,2,2,2,1,4]
+123. contentFromText("# idea\n\nSells algorithm finds cat about logic happy teacher. The meditates person proof and the. The student teacher false. True false apple. Green true idea proof number a tree.\n\n## apple happy\n\nBlue the runs person. Reads garden apple blue. A person garden buys a student apple false.")
+   => [{"heading":"idea","paragraphs":["Sells algorithm finds cat about logic happy teacher. The meditates person proof and the. The student teacher false. True false apple. Green true idea proof number a tree."]},{"heading":"apple happy","paragraphs":["Blue the runs person. Reads garden apple blue. A person garden buys a student apple false."]}]
+124. sentencesOf("Green person idea dog quickly meditates reads garden number. Runs list quickly about simple person true finds meditates.")
+   => ["Green person idea dog quickly meditates reads garden number.","Runs list quickly about simple person true finds meditates."]
+125. figuresFromRows([["Total","$93,868","=SUM(B1:B3)"],["Total","$26,300","=SUM(B1:B3)"]], "idea")
+   => [{"label":"Total","value":"$93,868","how":"=SUM(B1:B3)","sheet":"idea"},{"label":"Total","value":"$26,300","how":"=SUM(B1:B3)","sheet":"idea"}]
+126. pickFigures([{"label":"F0","value":"680","how":"","sheet":"S"},{"label":"F1","value":"206","how":"","sheet":"S"},{"label":"F2","value":"230","how":"","sheet":"S"},{"label":"F3","value":"108","how":"","sheet":"S"},{"label":"F4","value":"880","how":"","sheet":"S"},{"label":"F5","value":"737","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"273","how":"","sheet":"S"}], 3)
+   => [{"label":"F5","value":"737","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"680","how":"","sheet":"S"},{"label":"F1","value":"206","how":"","sheet":"S"}]
+127. bullet("However, value idea value runs.", 8)
+   => "However, value idea value runs"
+128. slideCount(10, 3)
+   => 3
+129. shareOut([5,2,4,8], 16)
+   => [4,2,4,6]
+130. contentFromText("# proof\n\nTrue person cat apple value quickly dog. Thinks finds house apple house idea runs garden blue.\n\n## reads logic finds\n\nAnd cat finds value house meditates. Garden thinks apple happy cat quickly. Student house list meditates reads house. Book house false green about with quickly idea happy. Green apple quickly tree house green.")
+   => [{"heading":"proof","paragraphs":["True person cat apple value quickly dog. Thinks finds house apple house idea runs garden blue."]},{"heading":"reads logic finds","paragraphs":["And cat finds value house meditates. Garden thinks apple happy cat quickly. Student house list meditates reads house. Book house false green about with quickly idea happy. Green apple quickly tree house green."]}]
+131. sentencesOf("Writes buys the tree simple false a. About house student house logic logic. Cat music idea logic proof runs value about. Blue the finds false tree value.")
+   => ["Writes buys the tree simple false a.","About house student house logic logic.","Cat music idea logic proof runs value about.","Blue the finds false tree value."]
+132. figuresFromRows([["Profit","",""],["Profit","n/a","=SUM(B1:B3)"],["algorithm idea","$38,970",""],["Total","",""],["Total","n/a",""],["Profit",308,"=SUM(B1:B3)"]], "idea thinks")
+   => [{"label":"algorithm idea","value":"$38,970","how":"","sheet":"idea thinks"},{"label":"Profit","value":"308","how":"=SUM(B1:B3)","sheet":"idea thinks"}]
+133. pickFigures([{"label":"F0","value":"80","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"20","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"413","how":"","sheet":"S"},{"label":"F3","value":"811","how":"","sheet":"S"},{"label":"F4","value":"358","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"24","how":"","sheet":"S"},{"label":"F6","value":"761","how":"","sheet":"S"},{"label":"F7","value":"434","how":"","sheet":"S"},{"label":"F8","value":"63","how":"","sheet":"S"},{"label":"F9","value":"549","how":"","sheet":"S"},{"label":"F10","value":"855","how":"","sheet":"S"},{"label":"F11","value":"7","how":"","sheet":"S"}], 4)
+   => [{"label":"F0","value":"80","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"20","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"358","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F2","value":"413","how":"","sheet":"S"}]
+134. bullet("However, the proof false logic value sells green about idea value prolog sells teacher house runs number proof student.", 16)
+   => "However, the proof false logic value sells green about idea value prolog sells teacher house runs…"
+135. slideCount(10, 3)
+   => 3
+136. shareOut([2,5], 10)
+   => [2,5]
+137. contentFromText("# data finds student\n\nList sells algorithm and book tree dog meditates. About prolog with buys meditates music house cat. Finds meditates quickly student teacher and false. Algorithm reads number happy dog green.\n\n## meditates\n\nValue thinks number student about. Dog about writes algorithm buys person music with.")
+   => [{"heading":"data finds student","paragraphs":["List sells algorithm and book tree dog meditates. About prolog with buys meditates music house cat. Finds meditates quickly student teacher and false. Algorithm reads number happy dog green."]},{"heading":"meditates","paragraphs":["Value thinks number student about. Dog about writes algorithm buys person music with."]}]
+138. sentencesOf("Prolog the algorithm number simple number. Data house false false tree buys data book. Cat proof the data student logic tree meditates a.")
+   => ["Prolog the algorithm number simple number.","Data house false false tree buys data book.","Cat proof the data student logic tree meditates a."]
+139. figuresFromRows([["","n/a",""]], "data house")
+   => []
+140. pickFigures([{"label":"F0","value":"87","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"280","how":"","sheet":"S"},{"label":"F2","value":"347","how":"","sheet":"S"},{"label":"F3","value":"140","how":"","sheet":"S"},{"label":"F4","value":"808","how":"","sheet":"S"}], 7)
+   => [{"label":"F0","value":"87","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"280","how":"","sheet":"S"},{"label":"F2","value":"347","how":"","sheet":"S"},{"label":"F3","value":"140","how":"","sheet":"S"},{"label":"F4","value":"808","how":"","sheet":"S"}]
+141. bullet("However, teacher book buys a happy runs thinks apple proof tree a house number about.", 12)
+   => "However, teacher book buys a happy runs thinks apple proof tree a…"
+142. slideCount(1, 2)
+   => 3
+143. shareOut([6,3,4,1,5,4], 1)
+   => [1,0,0,0,0,0]
+144. contentFromText("# false buys\n\nWith finds buys algorithm algorithm finds book buys finds. Idea thinks thinks the thinks prolog proof.\n\n## logic\n\nRuns music proof green book proof happy list. Tree sells writes false with list blue.")
+   => [{"heading":"false buys","paragraphs":["With finds buys algorithm algorithm finds book buys finds. Idea thinks thinks the thinks prolog proof."]},{"heading":"logic","paragraphs":["Runs music proof green book proof happy list. Tree sells writes false with list blue."]}]
+145. sentencesOf("Person simple quickly. A simple algorithm about sells proof meditates. Buys student buys. Runs prolog music person sells writes. Logic student writes reads happy student meditates value.")
+   => ["Person simple quickly.","A simple algorithm about sells proof meditates.","Buys student buys.","Runs prolog music person sells writes.","Logic student writes reads happy student meditates value."]
+146. figuresFromRows([["number","n/a","=B2-B3"],["",825,"=B2-B3"],["",130,""],["teacher","",""]], "cat")
+   => []
+147. pickFigures([], 3)
+   => []
+148. bullet("However, idea dog sells value meditates cat runs simple and a about book happy thinks house.", 12)
+   => "However, idea dog sells value meditates cat runs simple and a about…"
+149. slideCount(1, 1)
+   => 3
+150. shareOut([4,1,0,8], 10)
+   => [3,1,0,6]
+151. contentFromText("# proof student\n\nHappy a buys about data meditates true proof thinks. Apple teacher happy number data cat data false. The student quickly and person false data house. House with about. Teacher with simple true data with.\n\n## quickly happy tree\n\nLogic about data dog green runs tree true. Sells book tree algorithm quickly buys cat. True the runs proof idea logic simple logic person. Music student logic number and false. Runs and student.")
+   => [{"heading":"proof student","paragraphs":["Happy a buys about data meditates true proof thinks. Apple teacher happy number data cat data false. The student quickly and person false data house. House with about. Teacher with simple true data with."]},{"heading":"quickly happy tree","paragraphs":["Logic about data dog green runs tree true. Sells book tree algorithm quickly buys cat. True the runs proof idea logic simple logic person. Music student logic number and false. Runs and student."]}]
+152. sentencesOf("A quickly a dog algorithm runs a dog sells. Book apple logic book. Simple cat idea proof.")
+   => ["A quickly a dog algorithm runs a dog sells.","Book apple logic book.","Simple cat idea proof."]
+153. figuresFromRows([["Total",266,""],["Total","n/a","=B2-B3"],["",343,"=B2-B3"],["runs",66,"=SUM(B1:B3)"],["Total","",""],["Total","n/a","=SUM(B1:B3)"]], "meditates")
+   => [{"label":"Total","value":"266","how":"","sheet":"meditates"},{"label":"runs","value":"66","how":"=SUM(B1:B3)","sheet":"meditates"}]
+154. pickFigures([{"label":"F0","value":"922","how":"","sheet":"S"},{"label":"F1","value":"536","how":"","sheet":"S"},{"label":"F2","value":"454","how":"","sheet":"S"},{"label":"F3","value":"772","how":"","sheet":"S"},{"label":"F4","value":"208","how":"","sheet":"S"},{"label":"F5","value":"856","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"252","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F7","value":"379","how":"","sheet":"S"},{"label":"F8","value":"931","how":"","sheet":"S"},{"label":"F9","value":"798","how":"","sheet":"S"}], 7)
+   => [{"label":"F5","value":"856","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"252","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"922","how":"","sheet":"S"},{"label":"F1","value":"536","how":"","sheet":"S"},{"label":"F2","value":"454","how":"","sheet":"S"},{"label":"F3","value":"772","how":"","sheet":"S"},{"label":"F4","value":"208","how":"","sheet":"S"}]
+155. bullet("data music green writes with dog apple garden about.", 16)
+   => "data music green writes with dog apple garden about"
+156. slideCount(5, 1.5)
+   => 3
+157. shareOut([0], 8)
+   => [0]
+158. contentFromText("# idea tree\n\nSimple logic a teacher sells blue garden. Tree and dog and writes logic simple music. Writes meditates idea garden simple thinks. Logic with with.\n\n## cat\n\nTrue algorithm finds the meditates garden. Finds number idea music value buys finds simple. Prolog person proof buys. Student finds false teacher. Reads sells a.")
+   => [{"heading":"idea tree","paragraphs":["Simple logic a teacher sells blue garden. Tree and dog and writes logic simple music. Writes meditates idea garden simple thinks. Logic with with."]},{"heading":"cat","paragraphs":["True algorithm finds the meditates garden. Finds number idea music value buys finds simple. Prolog person proof buys. Student finds false teacher. Reads sells a."]}]
+159. sentencesOf("Happy runs true the reads runs. Writes cat book proof list tree. Person list list. Meditates with the house teacher happy.")
+   => ["Happy runs true the reads runs.","Writes cat book proof list tree.","Person list list.","Meditates with the house teacher happy."]
+160. figuresFromRows([["Total",52,""],["Profit","n/a","=B2-B3"]], "writes tree")
+   => [{"label":"Total","value":"52","how":"","sheet":"writes tree"}]
+161. pickFigures([{"label":"F0","value":"107","how":"","sheet":"S"}], 1)
+   => [{"label":"F0","value":"107","how":"","sheet":"S"}]
+162. bullet("However, logic simple thinks cat dog simple with blue student algorithm.", 8)
+   => "However, logic simple thinks cat dog simple with…"
+163. slideCount(20, 1.5)
+   => 13
+164. shareOut([8,4,1,3,3], 5)
+   => [1,1,1,1,1]
+165. contentFromText("# data\n\nWrites true thinks quickly happy. Happy apple green algorithm proof the.\n\n## cat house number\n\nA teacher list. With runs a idea value with tree logic.")
+   => [{"heading":"data","paragraphs":["Writes true thinks quickly happy. Happy apple green algorithm proof the."]},{"heading":"cat house number","paragraphs":["A teacher list. With runs a idea value with tree logic."]}]
+166. sentencesOf("Book person a list with finds list book. Data apple music quickly thinks student meditates book value. Reads garden the. Tree false garden sells tree idea blue simple.")
+   => ["Book person a list with finds list book.","Data apple music quickly thinks student meditates book value.","Reads garden the.","Tree false garden sells tree idea blue simple."]
+167. figuresFromRows([["Total",748,"=SUM(B1:B3)"],["Profit",222,""],["Profit","$94,676",""]], "finds list")
+   => [{"label":"Total","value":"748","how":"=SUM(B1:B3)","sheet":"finds list"},{"label":"Profit","value":"222","how":"","sheet":"finds list"},{"label":"Profit","value":"$94,676","how":"","sheet":"finds list"}]
+168. pickFigures([{"label":"F0","value":"948","how":"","sheet":"S"},{"label":"F1","value":"664","how":"","sheet":"S"},{"label":"F2","value":"437","how":"","sheet":"S"},{"label":"F3","value":"212","how":"","sheet":"S"},{"label":"F4","value":"845","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"14","how":"=SUM(B1:B2)","sheet":"S"}], 6)
+   => [{"label":"F4","value":"845","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F5","value":"14","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F0","value":"948","how":"","sheet":"S"},{"label":"F1","value":"664","how":"","sheet":"S"},{"label":"F2","value":"437","how":"","sheet":"S"},{"label":"F3","value":"212","how":"","sheet":"S"}]
+169. bullet("However, quickly meditates runs teacher with a meditates thinks blue simple blue tree prolog green.", 8)
+   => "However, quickly meditates runs teacher with a meditates…"
+170. slideCount(3, 2)
+   => 3
+171. shareOut([3], 13)
+   => [3]
+172. contentFromText("# value the runs\n\nData value number music. The happy simple book proof. Student apple number green.\n\n## meditates writes apple\n\nGreen number cat list student. Runs value blue happy buys green. Runs person teacher cat a. Sells algorithm meditates student.")
+   => [{"heading":"value the runs","paragraphs":["Data value number music. The happy simple book proof. Student apple number green."]},{"heading":"meditates writes apple","paragraphs":["Green number cat list student. Runs value blue happy buys green. Runs person teacher cat a. Sells algorithm meditates student."]}]
+173. sentencesOf("Book the simple the music garden. Tree about tree writes thinks proof teacher. And book a about book logic. True idea with student finds the idea and blue.")
+   => ["Book the simple the music garden.","Tree about tree writes thinks proof teacher.","And book a about book logic.","True idea with student finds the idea and blue."]
+174. figuresFromRows([["runs",197,""],["green about","n/a",""],["thinks runs","n/a",""]], "reads")
+   => [{"label":"runs","value":"197","how":"","sheet":"reads"}]
+175. pickFigures([{"label":"F0","value":"234","how":"","sheet":"S"},{"label":"F1","value":"393","how":"","sheet":"S"},{"label":"F2","value":"508","how":"","sheet":"S"},{"label":"F3","value":"82","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"543","how":"","sheet":"S"},{"label":"F5","value":"826","how":"","sheet":"S"},{"label":"F6","value":"6","how":"=SUM(B1:B2)","sheet":"S"}], 2)
+   => [{"label":"F3","value":"82","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"6","how":"=SUM(B1:B2)","sheet":"S"}]
+176. bullet("In fact, quickly and buys finds student logic person student runs thinks house finds.", 12)
+   => "In fact, quickly and buys finds student logic person student runs thinks…"
+177. slideCount(60, 2)
+   => 30
+178. shareOut([5,7,3,0,8], 16)
+   => [4,5,2,0,5]
+179. contentFromText("# value buys\n\nGarden value about writes false. True finds simple person a. Sells with list.\n\n## person\n\nValue sells with thinks reads number buys. Finds thinks person meditates finds about meditates proof about.")
+   => [{"heading":"value buys","paragraphs":["Garden value about writes false. True finds simple person a. Sells with list."]},{"heading":"person","paragraphs":["Value sells with thinks reads number buys. Finds thinks person meditates finds about meditates proof about."]}]
+180. sentencesOf("Logic happy data music dog about data garden garden. Dog dog data quickly number algorithm logic. Sells proof the meditates person teacher data with. Buys sells simple meditates simple simple a runs.")
+   => ["Logic happy data music dog about data garden garden.","Dog dog data quickly number algorithm logic.","Sells proof the meditates person teacher data with.","Buys sells simple meditates simple simple a runs."]
+181. figuresFromRows([["","n/a","=B2-B3"],["garden green","",""],["","$28,470",""],["sells","n/a",""],["Profit","","=SUM(B1:B3)"]], "and")
+   => []
+182. pickFigures([{"label":"F0","value":"616","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"537","how":"","sheet":"S"},{"label":"F2","value":"419","how":"","sheet":"S"},{"label":"F3","value":"176","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F4","value":"364","how":"","sheet":"S"},{"label":"F5","value":"588","how":"","sheet":"S"},{"label":"F6","value":"787","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F7","value":"206","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F8","value":"615","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F9","value":"341","how":"","sheet":"S"},{"label":"F10","value":"562","how":"","sheet":"S"},{"label":"F11","value":"514","how":"","sheet":"S"}], 7)
+   => [{"label":"F0","value":"616","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F3","value":"176","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F6","value":"787","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F7","value":"206","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F8","value":"615","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"537","how":"","sheet":"S"},{"label":"F2","value":"419","how":"","sheet":"S"}]
+183. bullet("In fact, student proof data and reads.", 12)
+   => "In fact, student proof data and reads"
+184. slideCount(20, 2)
+   => 10
+185. shareOut([6], 15)
+   => [6]
+186. contentFromText("# dog\n\nApple meditates blue data value meditates quickly the. Simple house quickly teacher runs value. Sells with sells. Happy quickly thinks teacher simple cat dog. Proof with number apple blue garden simple meditates.\n\n## value\n\nList idea music thinks simple number house with. Idea algorithm reads. About the buys finds quickly number buys meditates. Tree writes green value.")
+   => [{"heading":"dog","paragraphs":["Apple meditates blue data value meditates quickly the. Simple house quickly teacher runs value. Sells with sells. Happy quickly thinks teacher simple cat dog. Proof with number apple blue garden simple meditates."]},{"heading":"value","paragraphs":["List idea music thinks simple number house with. Idea algorithm reads. About the buys finds quickly number buys meditates. Tree writes green value."]}]
+187. sentencesOf("With teacher value the algorithm dog garden. House happy apple number student sells. Garden book person book. Green idea and tree number and buys.")
+   => ["With teacher value the algorithm dog garden.","House happy apple number student sells.","Garden book person book.","Green idea and tree number and buys."]
+188. figuresFromRows([["Total","",""],["Total","","=B2-B3"],["","",""],["Profit","","=B2-B3"]], "thinks proof")
+   => []
+189. pickFigures([{"label":"F0","value":"894","how":"","sheet":"S"}], 7)
+   => [{"label":"F0","value":"894","how":"","sheet":"S"}]
+190. bullet("The research shows that algorithm algorithm buys person person reads a garden house simple dog buys buys data meditates about prolog value sells simple apple finds.", 12)
+   => "The research shows that algorithm algorithm buys person person reads a garden…"
+191. slideCount(20, 3)
+   => 7
+192. shareOut([7,6], 4)
+   => [2,2]
+193. contentFromText("# person\n\nFinds book house student student. List garden meditates prolog finds meditates true. Runs a the and person sells music proof sells.\n\n## buys with\n\nMusic dog student. Logic proof and cat cat. With dog proof happy. Teacher proof blue about algorithm.")
+   => [{"heading":"person","paragraphs":["Finds book house student student. List garden meditates prolog finds meditates true. Runs a the and person sells music proof sells."]},{"heading":"buys with","paragraphs":["Music dog student. Logic proof and cat cat. With dog proof happy. Teacher proof blue about algorithm."]}]
+194. sentencesOf("Teacher about logic sells. House with algorithm about with tree blue. Meditates and with quickly cat the the.")
+   => ["Teacher about logic sells.","House with algorithm about with tree blue.","Meditates and with quickly cat the the."]
+195. figuresFromRows([["Profit","$74,613","=B2-B3"]], "and")
+   => [{"label":"Profit","value":"$74,613","how":"=B2-B3","sheet":"and"}]
+196. pickFigures([{"label":"F0","value":"687","how":"=SUM(B1:B2)","sheet":"S"},{"label":"F1","value":"989","how":"","sheet":"S"},{"label":"F2","value":"337","how":"=SUM(B1:B2)","sheet":"S"}], 1)
+   => [{"label":"F0","value":"687","how":"=SUM(B1:B2)","sheet":"S"}]
+197. bullet("person false true number writes dog music number with book data sells teacher list teacher about algorithm buys dog.", 16)
+   => "person false true number writes dog music number with book data sells teacher list teacher about…"
+198. slideCount(10, 1.5)
+   => 7
+199. shareOut([6], 14)
+   => [6]
+200. contentFromText("# reads finds person\n\nData dog about happy book. Value quickly buys a quickly. Runs algorithm number meditates false reads student. Sells apple dog reads simple quickly reads reads value.\n\n## proof cat garden\n\nQuickly cat meditates teacher list reads happy dog. Quickly false about with number tree tree. House simple with tree the.")
+   => [{"heading":"reads finds person","paragraphs":["Data dog about happy book. Value quickly buys a quickly. Runs algorithm number meditates false reads student. Sells apple dog reads simple quickly reads reads value."]},{"heading":"proof cat garden","paragraphs":["Quickly cat meditates teacher list reads happy dog. Quickly false about with number tree tree. House simple with tree the."]}]
