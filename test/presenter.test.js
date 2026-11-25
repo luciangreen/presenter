@@ -197,3 +197,11 @@ test('exports: an HTML deck to present anywhere, and an outline with notes', () 
   for (const r of REFS) assert.ok(md.includes(r.text));
   assert.match(md, /> Meditation helps students learn\./);
 });
+
+test('the slides\' shares of time add up to the talk', () => {
+  const refs = Array.from({ length: 13 }, (_, i) => ({ text: `Ref ${i + 1}` }));
+  for (const minutes of [1, 2, 5, 7.5, 10, 60]) {
+    const d = buildDeck({ minutes, content: contentFromText(TEXT), references: refs });
+    assert.equal(Math.round(d.slides.reduce((t, s) => t + s.minutes, 0) * 10), Math.round(minutes * 10), `${minutes} minutes`);
+  }
+});
